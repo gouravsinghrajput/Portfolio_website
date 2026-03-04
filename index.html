@@ -1,13 +1,46 @@
-<!-- the important thing according to me is the css and the js, html giving the basic stucture and not the complete look. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="this is going to be a personal portfolio website, which will tell about myself and about the things i know.">
-    <title>Document</title>
+    <title>Gourav Singh Rajput - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="script.js"></script>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Technical Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <!-- Curved name using SVG -->
+        <svg class="curved-name" viewBox="-1 10 300 60">
+          <defs>
+            <path id="nameCurve" d="M 20,150 A 130,130 0 0,1 280,150" />
+          </defs>
+          <text>
+            <textPath href="#nameCurve" startOffset="50%" text-anchor="middle">
+              Gourav Singh Rajput
+            </textPath>
+          </text>
+        </svg>
+
+        <!-- Circular Photo -->
+        <div class="photo-circle">
+          <img width="350" src="my_pic_1.jpeg" alt="Gourav Singh Rajput" />
+        </div>
+
+        <!-- Tagline -->
+        <p class="tagline">Computer Vision · Python · Web Dev</p>
+      </div>
+    </section>
 </body>
 </html>
